@@ -10,8 +10,12 @@ Repository with small and useful scripts and tools
 git ls-files | xargs wc -l
 ```
 
-### Nicer looking git log (tip make it into a alias like git lg)
+### Nicer looking git log (tip: u can make an alais for the git command by pasteing the secound line into the terminal)
 
 ```
 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+```
+make alias:
+```
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 ```
